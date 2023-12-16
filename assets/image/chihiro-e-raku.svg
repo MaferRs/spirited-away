@@ -1,4 +1,4 @@
-<svg width="718" height="537" viewBox="0 0 718 537" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="718" height="545" viewBox="0 0 718 545" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_d_27_23)">
 <rect x="107" y="86.0005" width="591" height="356" fill="url(#pattern0)" shape-rendering="crispEdges"/>
 </g>
@@ -12,7 +12,7 @@
 <rect x="197.932" y="126.78" width="86.7857" height="700.116" transform="rotate(-89.3237 197.932 126.78)" fill="url(#paint2_linear_27_23)"/>
 </g>
 <g filter="url(#filter4_f_27_23)">
-<rect x="215" y="486.78" width="86.7857" height="500.981" transform="rotate(-89.3237 215 486.78)" fill="url(#paint3_linear_27_23)"/>
+<rect x="184" y="498.5" width="97.5502" height="500.981" transform="rotate(-89.3237 184 498.5)" fill="url(#paint3_linear_27_23)"/>
 </g>
 <defs>
 <filter id="filter0_d_27_23" x="103" y="86.0005" width="599" height="364" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -43,7 +43,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_27_23"/>
 </filter>
-<filter id="filter4_f_27_23" x="175" y="360" width="581.971" height="172.693" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter4_f_27_23" x="144" y="360.957" width="582.098" height="183.457" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_27_23"/>
@@ -65,8 +65,8 @@
 <stop offset="0.512011" stop-color="#7BACAE"/>
 <stop offset="1" stop-color="#7BACAE"/>
 </linearGradient>
-<linearGradient id="paint3_linear_27_23" x1="215" y1="798.463" x2="268.4" y2="799.068" gradientUnits="userSpaceOnUse">
-<stop offset="0.0538191" stop-color="#7BACAE" stop-opacity="0.74"/>
+<linearGradient id="paint3_linear_27_23" x1="184" y1="810.184" x2="244.021" y2="810.948" gradientUnits="userSpaceOnUse">
+<stop offset="0.0538191" stop-color="#7BACAE"/>
 <stop offset="0.268813" stop-color="#7BACAE"/>
 <stop offset="0.512011" stop-color="#7BACAE"/>
 <stop offset="1" stop-color="#7BACAE"/>
