@@ -11,16 +11,36 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
 }
 
 body {
   background-color: var(--background);
 }
+
+.limite {
+  margin: 0 auto;
+  padding: 0 5rem;
+}
 .block-container {
   position: relative;
 }
+
+.block-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.block-header > img {
+  padding-top: 2rem;
+}
+.block-midias-sociais img {
+  position: relative;
+  padding: 0 0.8rem;
+}
 .fade1 {
   position: relative;
+  top: -110px;
   bottom: 100px;
   z-index: 1;
 }
