@@ -4,6 +4,7 @@
   --background: #7bacae;
   --font: 'Archivo', sans-serif;
   --darkgreen: #20484a;
+  --darkgreenVaviacao: rgba(85, 131, 132, 0.84);
   --white: #fcfbfb;
 }
 * {
@@ -16,6 +17,8 @@
 
 body {
   background-color: var(--background);
+  color: var(--white);
+  font-family: var(--font);
 }
 
 .limite {
@@ -38,52 +41,104 @@ body {
   position: relative;
   padding: 0 0.8rem;
 }
+
 .fade1 {
   position: relative;
-  top: -110px;
-  bottom: 100px;
+  bottom: 120px;
+  z-index: 1;
+}
+.fade2 {
+  position: relative;
+  top: -240px;
   z-index: 1;
 }
 
 .fade {
-  width: 100vw;
+  width: 100%;
 }
 
 .block-header {
   background-image: url('/assets/image/fundo-sem-personagem.svg');
   width: 100%;
-  height: 630px;
+  height: 650px;
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position-x: center;
+  background-position-x: center bottom;
 }
 
 .block-apresentacao {
+  width: 100%;
   position: relative;
   z-index: 2;
-  top: -250px;
+  bottom: 180px;
   display: flex;
-  align-items: center;
-  height: 550px;
+  justify-content: space-around;
+}
+.decoracao {
+  position: absolute;
+  right: 90px;
+  top: -30px;
 }
 
 .block-descricao {
-  width: 620px;
+  width: 650px;
+}
+.block-descricao-autor {
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.block-descricao-titulo {
+  font-size: 5rem;
+
+  padding-bottom: 2.5rem;
+}
+.block-descricao-sinopse {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  width: 700px;
+}
+
+.block-button {
+  display: flex;
+  gap: 30px;
+}
+.block-button button {
+  border-radius: 8px;
+  width: 16rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.button-assita-agora {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--darkgreenVaviacao);
+  color: var(--white);
+  border: none;
+}
+.button-assita-agora img {
+  padding-left: 2.5rem;
+}
+.assistir-trailer {
+  border: 2px solid var(--darkgreenVaviacao);
+  background-color: transparent;
+  color: var(--darkgreen);
+}
+
+.ilustracao {
+  width: 550px;
 }
 
 .footer {
-  position: absolute;
   background-image: url('/assets/image/footer.svg');
   width: 100%;
-  height: 630px;
+  height: 750px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-}
-
-.fade2 {
-  position: relative;
-  bottom: 250px;
-  z-index: 1;
+  background-attachment: fixed;
 }
