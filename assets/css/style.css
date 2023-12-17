@@ -6,6 +6,7 @@
   --darkgreen: #20484a;
   --darkgreenVaviacao: rgba(85, 131, 132, 0.84);
   --white: #fcfbfb;
+  --white2: #fcfbfb4f;
 }
 * {
   margin: 0;
@@ -79,7 +80,7 @@ body {
 .block-apresentacao {
   width: 100%;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   bottom: 180px;
   display: flex;
   justify-content: space-around;
@@ -138,6 +139,46 @@ body {
   color: var(--darkgreen);
 }
 
+.detalhe {
+  position: relative;
+  top: -80px;
+}
+.detalhe > hr {
+  width: 90%;
+  margin: 0 auto;
+  border-color: var(--white2);
+}
+
+.block-personagens {
+  margin: 0 auto;
+  height: 630px;
+}
+.titulo-personagens {
+  font-size: 2.8rem;
+  text-align: center;
+}
+.block-card-personagens {
+  margin: 0 auto;
+  width: 1146px;
+  height: 418px;
+  border-radius: 50px;
+  background: rgba(217, 217, 217, 0.2);
+}
+
+.button-personagens-ver-mais {
+  text-align: center;
+}
+.button-ver-mais {
+  background-color: var(--darkgreenVaviacao);
+  color: var(--white);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  text-transform: uppercase;
+  border: none;
+}
+
 .footer {
   background-image: url('/assets/image/footer.svg');
   width: 100%;
@@ -158,5 +199,5 @@ body {
   }
 }
 .ilustracao {
-  animation: float 4.5s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
