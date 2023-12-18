@@ -4,6 +4,7 @@
   --background: #7bacae;
   --font: 'Archivo', sans-serif;
   --darkgreen: #20484a;
+  --backgroundcolor: #307E82;
   --darkgreenVaviacao: rgba(85, 131, 132, 0.84);
   --white: #fcfbfb;
   --white2: #fcfbfb4f;
@@ -30,54 +31,41 @@ body {
   padding: 0 5rem;
 }
 
-.block-header {
-  position: relative;
+header {
   display: flex;
-  align-items: baseline;
+  justify-content: center;
+  background-image: url('/assets/image/fundo-sem-personagem.svg');
+  background-color: #307E82;
+  width: 100%;
+  height: 582px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  padding: 2rem 5rem ;
+}
+.header-content{
+  display: flex;
+  align-items: flex-start;
   justify-content: space-between;
+  max-width: 1298px;
+  width: 100%;
+}
+.logo{
+  width: 20rem;
 }
 
-.chihiro {
+.block-midias-sociais {
+  display: flex;
+  gap: 1.6rem;
+  padding-top: 44px;
+}
+
+.chihiro-image {
   position: absolute;
   z-index: 1;
   left: 50%;
   top: 42%;
-}
-.chihiro img {
   filter: drop-shadow(10px 2px 10px var(--darkgreen));
-}
-
-.block-header > img {
-  padding-top: 2rem;
-}
-.block-midias-sociais img {
-  position: relative;
-  padding: 0 0.8rem;
-}
-
-.fade1 {
-  position: relative;
-  bottom: 120px;
-  z-index: 1;
-}
-.fade2 {
-  position: relative;
-  top: -260px;
-  z-index: 1;
-}
-
-.fade {
-  width: 100%;
-}
-
-.block-header {
-  background-image: url('/assets/image/fundo-sem-personagem.svg');
-  width: 100%;
-  height: 650px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x: center bottom;
 }
 
 .block-apresentacao {
