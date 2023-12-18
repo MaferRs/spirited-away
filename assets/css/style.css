@@ -60,7 +60,7 @@ body {
 .fade2 {
   position: relative;
   top: -240px;
-  z-index: 1;
+  z-index: -2;
 }
 
 .fade {
@@ -150,19 +150,39 @@ body {
 }
 
 .block-personagens {
-  margin: 0 auto;
-  height: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .titulo-personagens {
   font-size: 2.8rem;
   text-align: center;
+  margin-bottom: 3rem;
 }
 .block-card-personagens {
-  margin: 0 auto;
   width: 1146px;
-  height: 418px;
   border-radius: 50px;
+  margin-bottom: 5rem;
   background: rgba(217, 217, 217, 0.2);
+}
+.lista-personagens {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+.itemLista img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+.itemLista p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .button-personagens-ver-mais {
@@ -183,9 +203,10 @@ body {
   background-image: url('/assets/image/footer.svg');
   width: 100%;
   height: 750px;
-  background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+  background-size: cover;
+
   background-attachment: fixed;
 }
 
