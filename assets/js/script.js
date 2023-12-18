@@ -86,3 +86,21 @@ personagens.forEach(personagem => {
     `
     card.appendChild(itemLista)
 })
+
+
+// card mostrar mais e mostrar menos
+
+const cardPersonagens = document.querySelector("#container-personagens");
+const buttonShowMore = document.querySelector(".button-ver-mais");
+
+function showMore() {
+    if (cardPersonagens.className == "open") {
+        // ler menos
+        cardPersonagens.className = "close";
+        buttonShowMore.innerHTML = "Mostrar mais";
+    } else {
+        // ler mais
+        cardPersonagens.className = "open";
+        buttonShowMore.innerHTML = "Mostrar menos";
+    }
+}

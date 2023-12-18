@@ -161,15 +161,35 @@ body {
 }
 .block-card-personagens {
   width: 1146px;
+  max-height: 360px;
+  overflow: hidden;
   border-radius: 50px;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   background: rgba(217, 217, 217, 0.2);
+  box-shadow: var(--darkgreenVaviacao) -10px 8px 15px;
 }
+.open {
+  width: 1146px;
+  border-radius: 50px;
+  max-height: 1300px;
+  background: rgba(217, 217, 217, 0.2);
+  box-shadow: var(--darkgreenVaviacao) -10px 8px 15px;
+}
+.close {
+  width: 1146px;
+  max-height: 360px;
+  overflow: hidden;
+  border-radius: 50px;
+  margin-bottom: 3rem;
+  background: rgba(217, 217, 217, 0.2);
+  box-shadow: var(--darkgreenVaviacao) -10px 8px 15px;
+}
+
 .lista-personagens {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  padding: 3rem;
+  padding: 4rem;
   flex-wrap: wrap;
 }
 .itemLista img {
