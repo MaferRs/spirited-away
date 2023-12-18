@@ -121,6 +121,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .button-assita-agora {
   display: flex;
@@ -129,6 +130,11 @@ body {
   background-color: var(--darkgreenVaviacao);
   color: var(--white);
   border: none;
+}
+.button-assita-agora:hover,
+.assistir-trailer:hover,
+.button-ver-mais:hover {
+  transform: scale(1.1);
 }
 .button-assita-agora img {
   padding-left: 2.5rem;
