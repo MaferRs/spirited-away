@@ -59,8 +59,8 @@ body {
 }
 .fade2 {
   position: relative;
-  top: -240px;
-  z-index: -2;
+  top: -260px;
+  z-index: 1;
 }
 
 .fade {
@@ -156,6 +156,8 @@ body {
 }
 
 .block-personagens {
+  position: relative;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
