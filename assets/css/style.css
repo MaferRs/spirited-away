@@ -4,7 +4,7 @@
   --background: #7bacae;
   --font: 'Archivo', sans-serif;
   --darkgreen: #20484a;
-  --backgroundcolor: #307E82;
+  --backgroundcolor: #307e82;
   --darkgreenVaviacao: rgba(85, 131, 132, 0.84);
   --white: #fcfbfb;
   --white2: #fcfbfb4f;
@@ -34,23 +34,25 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background-image: url('/assets/image/fundo-sem-personagem.svg');
-  background-color: #307E82;
+  background-color: #307e82;
   width: 100%;
   height: 582px;
+  padding: 2rem 5rem;
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
-  padding: 2rem 5rem ;
+  background-image: url('/assets/image/fundo-sem-personagem.svg');
+  -webkit-mask-image: linear-gradient(rgb(255, 255, 255), transparent);
+  mask-image: linear-gradient (rgb(0, 0, 0), transparent);
 }
-.header-content{
+.header-content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   max-width: 1298px;
   width: 100%;
 }
-.logo{
+.logo {
   width: 20rem;
 }
 
@@ -63,8 +65,9 @@ header {
 .chihiro-image {
   position: absolute;
   z-index: 1;
-  left: 50%;
-  top: 42%;
+  top: 15rem;
+  max-width: 600px;
+  height: 350px;
   filter: drop-shadow(10px 2px 10px var(--darkgreen));
 }
 
