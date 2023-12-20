@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap");
 
 :root {
   --background: #7bacae;
-  --font: 'Archivo', sans-serif;
+  --font: "Archivo", sans-serif;
   --darkgreen: #20484a;
   --backgroundcolor: #307e82;
   --darkgreenVariacao: rgba(85, 131, 132, 0.84);
@@ -33,7 +33,7 @@ header {
   height: 582px;
   padding: 2rem 5rem;
   background: no-repeat fixed top center
-      url('/assets/image/fundo-sem-personagem.svg'),
+      url("/assets/image/fundo-sem-personagem.svg"),
     linear-gradient(#307e82, #337e83);
   background-blend-mode: lighten;
 }
@@ -126,7 +126,7 @@ header {
   gap: 2rem;
 }
 
-.buttons-container a {
+.buttons-container > * {
   width: 16rem;
   height: 3.5rem;
 }
@@ -197,11 +197,11 @@ header {
   transition: max-height 1500ms ease;
 }
 
-.block-card-personagens[data-state='closed'] {
+.block-card-personagens[data-state="closed"] {
   max-height: 22.5rem;
 }
 
-.block-card-personagens[data-state='opened'] {
+.block-card-personagens[data-state="opened"] {
   max-height: 81.25rem;
 }
 
@@ -243,7 +243,7 @@ header {
 footer {
   width: 100%;
   height: 600px;
-  background: no-repeat fixed bottom center url('/assets/image/footer.svg'),
+  background: no-repeat fixed bottom center url("/assets/image/footer.svg"),
     linear-gradient(#2d787d, #1c4c4e);
   background-blend-mode: lighten;
 }
@@ -267,14 +267,15 @@ footer {
   transform: scale(1.1);
 }
 
-[data-button='filled'] {
+[data-button="filled"] {
   background-color: var(--darkgreenVariacao);
   color: var(--white);
 }
 
-[data-button='outlined'] {
+[data-button="outlined"] {
   border: 2px solid var(--darkgreenVariacao);
   color: var(--darkgreen);
+  background-color: transparent;
 }
 
 /**/

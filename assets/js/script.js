@@ -91,27 +91,25 @@ function toggleShow(event) {
 
   if (state === "opened") {
     // ver menos
-    charactersContainer.setAttribute("data-state", "closed")
+    charactersContainer.setAttribute("data-state", "closed");
     event.target.innerHTML = "Mostrar mais";
   }
 
   if (state === "closed") {
     // ver mais
-    charactersContainer.setAttribute("data-state", "opened")
+    charactersContainer.setAttribute("data-state", "opened");
     event.target.innerHTML = "Mostrar menos";
   }
 }
 
 /*modal */
 
-const buttonTrailer = document.querySelector("#assitirTrailer")
-const modal = document.querySelector("dialog")
-const closeModal = document.querySelector(".close-modal")
+const modal = document.querySelector("dialog");
 
-buttonTrailer.onclick = function () {
-  modal.showModal()
+function openModal() {
+  modal.showModal();
 }
 
-closeModal.onclick = function () {
-  modal.close()
+function closeModal() {
+  modal.close();
 }
