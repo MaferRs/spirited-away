@@ -88,16 +88,30 @@ characters.forEach((character) => {
 
 function toggleShow(event) {
   const state = charactersContainer.getAttribute("data-state");
-  
+
   if (state === "opened") {
     // ver menos
     charactersContainer.setAttribute("data-state", "closed")
     event.target.innerHTML = "Mostrar mais";
   }
 
-   if (state === "closed") {
+  if (state === "closed") {
     // ver mais
     charactersContainer.setAttribute("data-state", "opened")
     event.target.innerHTML = "Mostrar menos";
   }
+}
+
+/*modal */
+
+const buttonTrailer = document.querySelector("#assitirTrailer")
+const modal = document.querySelector("dialog")
+const closeModal = document.querySelector(".close-modal")
+
+buttonTrailer.onclick = function () {
+  modal.showModal()
+}
+
+closeModal.onclick = function () {
+  modal.close()
 }
