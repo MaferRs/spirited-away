@@ -1,106 +1,115 @@
+const characters = [
+  {
+    id: 1,
+    imagem: "assets/image/personagens/chihiro.jpg",
+    name: "Chihiro Ogino",
+  },
+  {
+    id: 2,
+    imagem: "assets/image/personagens/haku.jpg",
+    name: "Haku",
+  },
+  {
+    id: 3,
+    imagem: "assets/image/personagens/yubaba.jpg",
+    name: "Yubaba",
+  },
+  {
+    id: 4,
+    imagem: "assets/image/personagens/noface.jpg",
+    name: "No-face",
+  },
+  {
+    id: 5,
+    imagem: "assets/image/personagens/zeniba.jpeg",
+    name: "Zeniba",
+  },
+  {
+    id: 6,
+    imagem: "assets/image/personagens/ogino.jpeg",
+    name: "Ogino",
+  },
+  {
+    id: 7,
+    imagem: "assets/image/personagens/Aogaeru.jpg",
+    name: "Aogaeru",
+  },
+  {
+    id: 8,
+    imagem: "assets/image/personagens/Aniyaku.jpg",
+    name: "Aniyaku",
+  },
+  {
+    id: 9,
+    imagem: "assets/image/personagens/boh.jpg",
+    name: "Boh",
+  },
+  {
+    id: 10,
+    imagem: "assets/image/personagens/chichiyaku.jpeg",
+    name: "Chichiyaku",
+  },
+  {
+    id: 11,
+    imagem: "assets/image/personagens/kamaji.jpeg",
+    name: "Kamaji",
+  },
+  {
+    id: 12,
+    imagem: "assets/image/personagens/lin.jpg",
+    name: "Lin",
+  },
+  {
+    id: 13,
+    imagem: "assets/image/personagens/yuko.png",
+    name: "Yuko",
+  },
+];
 
-const personagens = [
-    {
-        "id": 1,
-        "imagem": "assets/image/personagens/chihiro.jpg",
-        "name": "Chihiro Ogino"
-    },
-    {
-        "id": 2,
-        "imagem": "assets/image/personagens/haku.jpg",
-        "name": "Haku"
-    },
-    {
-        "id": 3,
-        "imagem": "assets/image/personagens/yubaba.jpg",
-        "name": "Yubaba"
-    },
-    {
-        "id": 4,
-        "imagem": "assets/image/personagens/noface.jpg",
-        "name": "No-face"
-    },
-    {
-        "id": 5,
-        "imagem": "assets/image/personagens/zeniba.jpeg",
-        "name": "Zeniba"
-    },
-    {
-        "id": 6,
-        "imagem": "assets/image/personagens/ogino.jpeg",
-        "name": "Ogino"
-    },
-    {
-        "id": 7,
-        "imagem": "assets/image/personagens/Aogaeru.jpg",
-        "name": "Aogaeru"
-    },
-    {
-        "id": 8,
-        "imagem": "assets/image/personagens/Aniyaku.jpg",
-        "name": "Aniyaku"
-    },
-    {
-        "id": 9,
-        "imagem": "assets/image/personagens/boh.jpg",
-        "name": "Boh"
-    },
-    {
-        "id": 10,
-        "imagem": "assets/image/personagens/chichiyaku.jpeg",
-        "name": "Chichiyaku"
-    },
-    {
-        "id": 11,
-        "imagem": "assets/image/personagens/kamaji.jpeg",
-        "name": "Kamaji"
-    },
-    {
-        "id": 12,
-        "imagem": "assets/image/personagens/lin.jpg",
-        "name": "Lin"
-    },
-    {
-        "id": 13,
-        "imagem": "assets/image/personagens/yuko.png",
-        "name": "Yuko"
-    }
-]
+const charactersContainer = document.querySelector(".block-card-personagens");
+const charactersList = document.querySelector(".lista-personagens");
 
-const jsonData = JSON.stringify(personagens)
-const personagensData = JSON.parse(jsonData)
+characters.forEach((character) => {
+  const li = document.createElement("li");
+  li.className = "personagem";
 
+  const image = document.createElement("img");
+  image.src = character.imagem;
+  image.setAttribute("alt", character.name);
 
-const card = document.querySelector(".lista-personagens")
+  const name = document.createElement("p");
+  name.innerHTML = character.name;
 
-console.log(card)
-
-personagens.forEach(personagem => {
-    const itemLista = document.createElement('li')
-    itemLista.className = 'itemLista'
-
-    itemLista.innerHTML = `
-    <img src="${personagem.imagem}" alt="${personagem.name}" />
-
-    <p>${personagem.name}</p>
-    `
-    card.appendChild(itemLista)
-})
-
+  li.append(image, name);
+  charactersList.appendChild(li);
+});
 
 // card mostrar mais e mostrar menos
 
-const cardPersonagens = document.querySelector("#container-personagens");
-const buttonShowMore = document.querySelector(".button-ver-mais");
+function toggleShow(event) {
+  const state = charactersContainer.getAttribute("data-state");
 
-function showMore() {
-    if (cardPersonagens.className == "open") {
-        // ler menos
-        cardPersonagens.className = "close";
-        buttonShowMore.innerHTML = "Mostrar mais";
-    } else {
-        // ler mais
-        cardPersonagens.className = "open";
-        buttonShowMore.innerHTML = "Mostrar menos";
-    }
+  if (state === "opened") {
+    // ver menos
+    charactersContainer.setAttribute("data-state", "closed");
+    event.target.innerHTML = "Mostrar mais";
+  }
+
+  if (state === "closed") {
+    // ver mais
+    charactersContainer.setAttribute("data-state", "opened");
+    event.target.innerHTML = "Mostrar menos";
+  }
+}
+
+/*modal */
+
+const modal = document.querySelector("dialog");
+
+function openModal() {
+  modal.showModal();
+}
+
+function closeModal() {
+  modal.close();
 }
