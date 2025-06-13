@@ -327,6 +327,7 @@ iframe {
     flex-wrap: wrap;
     gap: 4rem;
     padding-bottom: unset;
+    justify-content: center;
   }
 
   .block-container {
@@ -335,6 +336,10 @@ iframe {
   }
 
   .block-descricao {
+    max-width: 40rem;
+  }
+
+  .ilustracao {
     max-width: 40rem;
   }
 
@@ -349,7 +354,7 @@ iframe {
 
   .block-descricao-sinopse {
     font-size: 1rem;
-    max-width: 300px;
+    max-width: 40rem;
     line-height: 20px;
   }
 
